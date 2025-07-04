@@ -63,9 +63,17 @@ struct ContentView: View {
                 .padding(.horizontal)
                 .padding(.bottom)
 
-            Button("Signup") {
-                
-            }
+            Button(action: {}) {
+                Text("Login").font(.system(size:20)).foregroundStyle(Color.white)
+            }.frame(width: 100, height: 40)
+                .background(Color.blue)
+                .cornerRadius(20)
+                .padding(.horizontal)
+            
+            Button(action: {}) {
+                Text("Sign In")
+                    .font(.system(size:14))
+            }.padding(.top)
 
         }.frame(
             maxWidth: .infinity,
